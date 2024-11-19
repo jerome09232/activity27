@@ -1,0 +1,95 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  /* Product Grid Layout */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .product-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .product-item h2 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+  }
+  
+  .product-item p {
+    margin-top: 10px;
+    color: #777;
+  }
+  
+  .product-item .price {
+    font-weight: bold;
+    color: #e74c3c;
+    margin-top: 10px;
+  }
+  
+  /* Pagination */
+  footer {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .pagination {
+    list-style: none;
+    display: inline-flex;
+    gap: 10px;
+  }
+  
+  .pagination a {
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #ddd;
+    border-radius: 5px;
+    color: #333;
+    transition: background-color 0.3s;
+  }
+  
+  .pagination a:hover {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .pagination a.active {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
